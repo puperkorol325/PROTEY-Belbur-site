@@ -1,0 +1,917 @@
+/* header */
+
+.container{
+    width: 1400px;
+}
+
+#messengerIcon {
+    background-color: rgb(177, 219, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+    transition: .5s;
+}
+
+#messengerIcon:hover{
+    transform: scale(1.05);
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+}
+
+#left-side{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 520px;
+}
+
+#right-side{
+    width: 600px;
+}
+
+#logo {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    height: 100%;
+}
+
+#logo h2 {
+    font-size: 16px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+    
+}
+
+#logo img{
+    width: 130px;
+}
+
+#headerPhoneNumber{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100px;
+    border-left: 3px blue solid;
+    padding-left: 10px;
+}
+
+#headerPhoneNumber h2{
+    font-size: 17px;
+}
+
+#right-side {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item{
+    position: relative;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(8, 8, 110);
+    transition: .5s;
+}
+
+.nav-item:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(25, 25, 148);
+    left: 0;
+    bottom: 0;
+    transition: .5s;
+    transform: scale(0);
+}
+
+.nav-item:hover:before{
+    transform: scale(1);
+}
+
+/* banner */
+
+#banner{
+    height: 500px;
+    background-image: url('../imgs/banner.jpg');
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+#description{
+    width: 500px;
+    margin-left: 10px;
+}
+
+#description h1{
+    font-family: "Open Sans", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+#description h2{
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: rgb(13, 13, 194);
+}
+
+#description h3{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.waveIcon{
+    margin-right: 1px;
+    margin-left: 3px;
+}
+
+.callbackBtn {
+    border: 3px blue solid;
+    border-radius: 20px;
+    background: rgb(243, 243, 243);
+    width: 230px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(4, 4, 83);
+    margin-top: 40px;
+    box-shadow: 0px 2px 0px black;
+    transition: .5s ease;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.callbackBtn:hover{
+    transform: translateY(3px);
+    color: rgb(35, 20, 255);
+    box-shadow: 0px 0px 0px black;
+    background-color: rgb(233, 233, 233);
+    transition: .5s ease;
+}
+
+/* about us block */
+
+#aboutUsBlock{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    background-image: url("../imgs/wave.jpg");
+    background-position: bottom;
+    background-size: cover;
+    padding-bottom: 60px;
+}
+
+#title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+#title h1{
+    font-size: 32px;
+    font-weight: 600;
+    color: rgb(4, 4, 136);
+}
+
+#title hr{
+    width: 230px;
+    height: 2px;
+    background-color: rgb(2, 2, 155);
+}
+
+#title h2{
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(0, 0, 83);
+}
+
+#reasons {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+#reasonItem{
+    width: 190px;
+    background-color: rgb(242, 249, 255);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    border: 2px rgb(74, 74, 255) solid;
+    height: 250px;
+    transition: .5s;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#reasonItem:hover {
+    transform: scale(1.02);
+    transition: .5s;
+}
+
+#reasonItem img{
+    width: 40px;
+    margin-top: 20px;
+}
+
+#reasonItem hr {
+    width: 120px;
+}
+
+#reasonItem h2{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: black;
+    text-align: center;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+/* Services Block */
+
+#servicesBlock{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-position: top;
+    background-size: cover;
+    padding-top: 40px;
+    font-family: "Open Sans", sans-serif;
+}
+
+#servicesTitle {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#servicesTitle h1{
+    width: 600px;
+    font-size: 28px;
+    font-weight: 600;
+    color: rgb(0, 0, 83);
+}
+
+#servicesTitle h2{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(100, 100, 100);
+    border-left: 1px blue solid;
+    margin-left: 0px;
+    padding-left: 20px;
+}
+
+#services {
+    margin-top: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+#serviceItem{
+    width: 360px;
+    background-color: rgb(253, 253, 253);
+    border: 1px rgb(226, 226, 226) solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    transition: .5s;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#serviceItem:hover {
+    transform: scale(1.02);
+    transition: .5s;
+}
+
+#serviceItem #img {
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#serviceItem figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#serviceItem figcaption {
+    height: 100px;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#serviceItem h2 {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Equipment block */
+
+#equipmentBlock{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    font-family: "Open Sans", sans-serif;
+    padding-bottom: 20px;
+}
+
+#equipmentBlock img {
+    margin-top: 30px;
+    border: 10px rgb(245, 245, 245) solid;
+    border-radius: 20px;
+}
+
+/* tubes block */
+
+#tubesBlock{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    font-family: "Open Sans", sans-serif;
+    background-color: rgb(250, 250, 250);
+    padding-bottom: 20px;
+}
+
+#tubes {
+    margin-top: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+#tubeItem {
+    width: 380px;
+    border: 2px rgb(0, 0, 112) solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    height: 880px;
+}
+
+#aboutTube {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.belowTubes{
+    flex-grow: 2;
+}
+
+#tubeItem .callbackBtn {
+    width: 80%;
+    height: 80px;
+    border-radius: 40px;
+}
+
+#tubeItem img {
+    width: 240px;
+}
+
+#tubeItem h2 {
+    margin-top: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#tubeItem h1 {
+    margin-top: 10px;
+    width: 80%;
+    text-align: center;
+}
+
+#features {
+    width: 93%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0px;
+    margin-top: 20px;
+}
+
+#feature {
+    width: 100%;
+    border-top: 1px rgb(189, 189, 189) solid;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 17px;
+}
+
+/* Obustroystvo Price Block */
+
+#obustroystvoBlock{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+    font-family: "Open Sans", sans-serif;
+    background-color: rgb(250, 250, 250);
+}
+
+#obustroystvoBlock #title h1 {
+    color: black;
+    font-size: 24px;
+}
+
+#obustroystvo {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+#obustroystvoItem {
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+#obustroystvoBlock #obustroystvoItem h3 {
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(128, 128, 128);
+}
+
+#obustroystvoBlock #obustroystvoItem h2 {
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.moreBtn {
+    border-radius: 40px;
+    border: 0;
+    background: rgb(0, 26, 255);
+    width: 230px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    box-shadow: 0px 2px 0px black;
+    transition: .7s ease;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.moreBtn:hover {
+    background-color: orange;
+}
+
+/* Calculating The Price Block*/
+
+#calculatingThePriceBlock{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 70px;
+    font-family: "Open Sans", sans-serif;
+}
+
+#questions {
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(249, 249, 249);
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px 4px rgb(145, 145, 145);
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+#calculatingThePriceBlock h1 {
+    font-size: 30px;
+    font-weight: 600;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#questions h3 {
+    font-size: 18px;
+    color: rgb(153, 153, 153);
+    margin-top: 5px;
+}
+
+#questions h2 {
+    font-size: 30px;
+}
+
+#contacts {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    color: rgb(0, 0, 128);
+}
+
+#questions .callbackBtn {
+    margin-top: 5px;
+    padding: 0px;
+}
+
+#calculating {
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(249, 249, 249);
+    box-shadow: 2px 2px 4px 4px rgb(145, 145, 145);
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+#calculating hr{
+    width: 230px;
+    height: 2px;
+    background-color: rgb(145, 145, 145);
+}
+
+#calculating form {
+    width: 90%;
+}
+
+.ask {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.ask input{
+    height: 40px;
+    margin-top: 5px;
+    border: 0;
+    border-radius: 20px;
+    padding-left: 10px;
+    background-color: rgb(231, 231, 231);
+}
+
+.submitBtn {
+    border: 0;
+    border-radius: 30px;
+    box-shadow: 0px 2px 0px black;
+    height: 60px;
+    width: 200px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: blue;
+    margin-top: 40px;
+    transition: .5s;
+}
+
+.submitBtn:hover {
+    background-color: orange;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #3e78ff;
+    margin-top: 50px;
+}
+
+#footer {
+    width: 1400px;
+    margin-top: 50px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#footer img{
+    width: 50%;
+}
+
+
+
+
+@media screen and (max-width: 1400px) {
+    #logo img{
+        width: 140px;
+    }
+
+    #logo {
+        width: 35%
+    }
+
+    #header {
+        height: 180px;
+    }
+
+    #logo h2 {
+        font-size: 15px;
+    }
+
+    #left-side {
+        width: 45%;
+    }
+
+    #headerPhoneNumber {
+        width: 65%;
+    }
+
+    #headerPhoneNumber h2 {
+        font-size: 14px;
+    }
+
+    #right-side {
+        width: 50%;
+    }
+
+    .nav-item {
+        font-size: 18px;
+    }
+
+    #servicesTitle {
+        width: 95%;
+    }
+
+    #servicesTitle h1 {
+        width: 45%;
+        text-align: right;
+        padding-right: 10px;
+    }
+
+    #servicesTitle h2 {
+        width: 55%;
+    }
+
+    #services{
+        gap: 30px;
+        justify-content: space-around;
+    }
+
+    #equipmentBlock img {
+        width: 92%;
+    }
+
+    #tubes {
+        justify-content: center;
+    }
+
+    .belowTubes {
+        flex-grow: 0;
+    }
+
+    #questions {
+        width: 45%;
+    }
+
+    #questions h2 {
+        font-size: 25px;
+    }
+
+    #calculating {
+        width: 45%;
+    }
+
+    #calculating h1 {
+        text-align: center;
+    }
+
+    #contacts {
+        margin-left: 0px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .container {
+        width: 100%;
+    }
+
+    #header{
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+
+
+    #left-side {
+        width: 100%;
+        height: 200px;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    #logo img {
+        width: 160px;
+    }
+
+    #logo {
+        width: 45%;
+    }
+
+    #logo h2 {
+        font-size: 17px;
+    }
+
+    #headerPhoneNumber {
+        width: 60%;
+    }
+
+    #headerPhoneNumber h2 {
+        font-size: 18px;
+    }
+
+    #right-side {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .nav-item {
+        margin-top: 20px;
+        font-size: 25px;
+    }
+
+    #reasonItem {
+        width: 220px;
+    }
+
+    #description h2 {
+        font-size: 18px;
+    }
+
+    #description h1 {
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    #description h3 {
+        font-size: 14px;
+    }
+
+    #title h1 {
+        text-align: center;
+    }
+
+    #title h2 {
+        text-align: center;
+    }
+
+    #servicesTitle {
+        flex-direction: column;
+    }
+
+    #servicesTitle h1 {
+        text-align: center;
+        width: 100%;
+        font-size: 26px;
+    }
+
+    #servicesTitle h2 {
+        width: 100%;
+        border: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    #serviceItem {
+        width: 90%;
+        height: 320px;
+    }
+
+    #tubeItem {
+        width: 80%;
+    }
+
+    #serviceItem figcaption{
+        height: 120px;
+    }
+
+    #serviceItem figcaption h2{
+        font-size: 22px;
+    }
+
+    #calculatingThePriceBlock {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #questions {
+        width: 90%;
+    }
+
+    #calculating {
+        width: 90%;
+        margin-top: 50px;
+    }
+
+    .callbackBtn {
+        width: 95%;
+    }
+
+    .submitBtn {
+        width: 95%;
+    }
+
+}
+
+@media screen and (max-width: 630px) {
+
+    #left-side {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    #logo {
+        width: 100%;
+    }
+
+    #headerPhoneNumber {
+        width: 80%;
+        height: 100%;
+        margin-top: 20px;
+        padding-top: 20px;
+        text-align: center;
+        border-left: 0;
+        border-top: 2px rgb(0, 0, 141) solid;
+    }
+
+    #headerPhoneNumber h2 {
+        font-size: 20px;
+    }
+
+    #right-side {
+        margin-top: 30px;
+    }
+}
